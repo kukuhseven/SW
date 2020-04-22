@@ -36,13 +36,13 @@ function increment(incrementor, target) {
 	}
 	document.getElementById(target).value = value;
 }
-/*(function() {
+(function() {
 	UIkit.scroll('.js-scroll-to-description', {
 		duration: 300,
 		offset: 58
 	});
-})()*/;
-/*(function() {
+})();
+(function() {
 	UIkit.util.on('.js-product-switcher', 'show', function() {
 		UIkit.update();
 	});
@@ -54,7 +54,7 @@ function increment(incrementor, target) {
 			UIkit.offcanvas('#cart-offcanvas').show();
 		};
 	});
-})();*/
+})();
 (function() {
 	var addToButtons = document.querySelectorAll('.js-add-to');
 	Array.prototype.forEach.call(addToButtons, function(el) {
