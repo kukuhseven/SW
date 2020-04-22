@@ -6,8 +6,19 @@ var cacheFiles = [
 	'./',
 	'./index.html',
 	'./js/app.js',
+	'./js/uikit.js',
+	'./js/uikit-icons.js',
+	'./js/JQuery3.3.1.js',
+	'./js/angular.min.js',
+	'./js/controller.js',
+	'./js/script.js',
+	'./js/lightslider.js',
+	'./js/slider.js',
 	'./css/reset.css',
 	'./css/style.css',
+	'./css/lightslider.css',
+	'./manifest.json',
+	'./favicon.ico',
 	'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic'
 ]
 
