@@ -29,7 +29,7 @@ var cacheFiles = [
 	'./js/app.js',
 	'./js/uikit.js',
 	'./js/uikit-icons.js',
-	'./js/JQuery3.3.1.js',
+	'./js/jquery-3.5.0.min.js',
 	'./js/angular.min.js',
 	'./js/controller.js',
 	'./js/script.js',
