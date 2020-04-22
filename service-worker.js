@@ -5,6 +5,7 @@ var cacheName = 'v1';
 var cacheFiles = [
 	'./',
 	'./index.html',
+	'./home.html',
 	'./js/app.js',
 	'./js/uikit.js',
 	'./js/uikit-icons.js',
