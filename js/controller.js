@@ -38,7 +38,7 @@ angular.module('maxi',[]).controller('maxikomp', function($scope){
         },
         {
             title:'Phones & Gadgets',
-            src:'images/catalog/phone.svg',
+            src:'images/catalog/phones.svg',
             alt:'Phones & Gadgets',
             total:'144',
             link0:'category',
