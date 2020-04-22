@@ -14,7 +14,6 @@ var cacheFiles = [
 	'./js/script.js',
 	'./js/lightslider.js',
 	'./js/slider.js',
-	'./css/reset.css',
 	'./css/style.css',
 	'./css/lightslider.css',
 	'./manifest.json',
