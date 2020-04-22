@@ -26,7 +26,6 @@ var cacheFiles = [
 	'./product.html',
 	'./settings.html',
 	'./subcategory.html',
-	'./js/app.js',
 	'./js/uikit.js',
 	'./js/uikit-icons.js',
 	'./js/jquery-3.5.0.slim.min.js',
