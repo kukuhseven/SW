@@ -36,10 +36,4 @@ var get = function(url) {
   }); 
 };
 
-)
-  .catch(function(err) {
-    console.log("Error", err);
-  })
-
-
 
