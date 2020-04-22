@@ -70,12 +70,12 @@ a:active,a:hover {
 	outline:0
 }
 .uk-link,a {
-	color:#1e87f0;
+	color:#f01e1e;
 	text-decoration:none;
 	cursor:pointer
 }
 .uk-link:hover,a:hover {
-	color:#0f6ecd;
+	color:#cd0f0f;
 	text-decoration:none
 }
 abbr[title] {
@@ -244,12 +244,12 @@ pre code {
 	font-family:Consolas,monaco,monospace
 }
 ::-moz-selection {
-	background:#39f;
+	background:#ff3333;
 	color:#fff;
 	text-shadow:none
 }
 ::selection {
-	background:#39f;
+	background:#ff3333;
 	color:#fff;
 	text-shadow:none
 }
@@ -297,7 +297,7 @@ a,area,button,input,label,select,summary,textarea {
 	color:inherit
 }
 .uk-link-heading a:hover,a.uk-link-heading:hover {
-	color:#1e87f0;
+	color:#f01e1e;
 	text-decoration:none
 }
 .uk-link-reset a,.uk-link-reset a:hover,a.uk-link-reset,a.uk-link-reset:hover {
@@ -823,14 +823,14 @@ select.uk-form-width-xsmall {
 }
 .uk-checkbox:focus,.uk-radio:focus {
 	outline:0;
-	border-color:#1e87f0
+	border-color:#f01e1e
 }
 .uk-checkbox:checked,.uk-checkbox:indeterminate,.uk-radio:checked {
-	background-color:#1e87f0;
+	background-color:#f01e1e;
 	border-color:transparent
 }
 .uk-checkbox:checked:focus,.uk-checkbox:indeterminate:focus,.uk-radio:checked:focus {
-	background-color:#0e6dcd
+	background-color:#cd0e0e
 }
 .uk-radio:checked {
 	background-image:url(data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Ccircle%20fill%3D%22%23fff%22%20cx%3D%228%22%20cy%3D%228%22%20r%3D%222%22%20%2F%3E%0A%3C%2Fsvg%3E)
@@ -993,16 +993,16 @@ select.uk-form-width-xsmall {
 	border-color:#424242
 }
 .uk-button-primary {
-	background-color:#1e87f0;
+	background-color:#f01e1e;
 	color:#fff;
 	border:1px solid transparent
 }
 .uk-button-primary:focus,.uk-button-primary:hover {
-	background-color:#0f7ae5;
+	background-color:#e50f0f;
 	color:#fff
 }
 .uk-button-primary.uk-active,.uk-button-primary:active {
-	background-color:#0e6dcd;
+	background-color:#cd0e0e;
 	color:#fff
 }
 .uk-button-secondary {
@@ -1078,10 +1078,10 @@ select.uk-form-width-xsmall {
 	padding:0;
 	line-height:1.5;
 	background:0 0;
-	color:#1e87f0
+	color:#f01e1e
 }
 .uk-button-link:focus,.uk-button-link:hover {
-	color:#0f6ecd;
+	color:#cd0f0f;
 	text-decoration:underline
 }
 .uk-button-link:disabled {
@@ -1155,7 +1155,7 @@ select.uk-form-width-xsmall {
 	background:#f8f8f8
 }
 .uk-section-primary {
-	background:#ff5900
+	background:#d3090c
 }
 .uk-section-secondary {
 	background:#222
@@ -1484,13 +1484,13 @@ select.uk-form-width-xsmall {
 	color:#fff
 }
 .uk-card-primary {
-	background:#1e87f0
+	background:#f01e1e
 }
 .uk-card-primary .uk-card-title,.uk-card-secondary .uk-card-title {
 	color:#fff
 }
 .uk-card-primary.uk-card-hover:hover,.uk-card-secondary.uk-card-hover:hover {
-	background-color:#1e87f0
+	background-color:#f01e1e
 }
 .uk-card-secondary {
 	background:#222
@@ -1607,7 +1607,7 @@ select.uk-form-width-xsmall {
 	padding:0 5px;
 	border-radius:500px;
 	vertical-align:middle;
-	background:#1e87f0;
+	background:#f01e1e;
 	color:#fff;
 	font-size:.875rem;
 	display:-webkit-inline-box;
@@ -1628,7 +1628,7 @@ select.uk-form-width-xsmall {
 .uk-label {
 	display:inline-block;
 	padding:0 10px;
-	background:#1e87f0;
+	background:#f01e1e;
 	line-height:1.5;
 	font-size:.875rem;
 	color:#fff;
@@ -3901,7 +3901,7 @@ iframe.uk-cover {
 	background-color:#f8f8f8
 }
 .uk-background-primary {
-	background-color:#1e87f0
+	background-color:#f01e1e
 }
 .uk-background-secondary {
 	background-color:#222
@@ -5936,7 +5936,7 @@ iframe.uk-cover {
 }
 .tm-checkbox:checked+label::before,.tm-radio:checked+label::before {
 	border-color:transparent;
-	background-color:#1e87f0
+	background-color:#f01e1e
 }
 .tm-checkbox+label::after,.tm-radio+label::after {
 	position:absolute;
@@ -5985,7 +5985,7 @@ iframe.uk-cover {
 }
 .tm-slider-items>.uk-active .tm-media-box-frame {
 	opacity:1;
-	border-color:#1e87f0
+	border-color:#f01e1e
 }
 .tm-variations {
 	margin:0 0 0 -10px
@@ -5999,7 +5999,7 @@ iframe.uk-cover {
 }
 .tm-variations>.uk-active>a {
 	color:#c0292b;
-	border-color:#1e87f0;
+	border-color:#f01e1e;
 	background-color:transparent
 }
 .tm-variations>*>.tm-variation-color {
@@ -6096,7 +6096,7 @@ iframe.uk-cover {
 	border-radius:4px
 }
 .tm-choose.uk-active {
-	border-color:#1e87f0
+	border-color:#f01e1e
 }
 .tm-choose:not(.uk-active):focus,.tm-choose:not(.uk-active):hover {
 	background-color:#f8f8f8
