@@ -6,7 +6,6 @@ var cacheFiles = [
 	'./',
 	'./index.html',
 	'./home.html',
-	'./home.html',
 	'./404.html',
 	'./about.html',
 	'./account.html',
