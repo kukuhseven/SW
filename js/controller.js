@@ -21,7 +21,7 @@ angular.module('maxi',[]).controller('maxikomp', function($scope){
     $scope.catalog   = [
         {
             title:'Laptops & PCs',
-            src:'computers',
+            src:'images/catalog/computers.svg',
             alt:'Laptops & PCs',
             total:'367',
             link0:'category',
@@ -38,7 +38,7 @@ angular.module('maxi',[]).controller('maxikomp', function($scope){
         },
         {
             title:'Phones & Gadgets',
-            src:'phones',
+            src:'images/catalog/phone.svg',
             alt:'Phones & Gadgets',
             total:'144',
             link0:'category',
@@ -55,7 +55,7 @@ angular.module('maxi',[]).controller('maxikomp', function($scope){
         },
         {
             title:'Monitors & Projectors',
-            src:'monitors',
+            src:'images/catalog/monitors.svg',
             alt:'Monitors & Projectors',
             total:'58',
             link0:'category',
@@ -72,7 +72,7 @@ angular.module('maxi',[]).controller('maxikomp', function($scope){
         },
         {
             title:'Games & Accessories',
-            src:'games',
+            src:'images/catalog/games.svg',
             alt:'Games & Accessories',
             total:'13',
             link0:'category',
@@ -89,7 +89,7 @@ angular.module('maxi',[]).controller('maxikomp', function($scope){
         },
         {
             title:'Printers, Inks & Cartrdiges',
-            src:'printers',
+            src:'images/catalog/printers.svg',
             alt:'Printers, Inks & Cartrdiges',
             total:'59',
             id:'printers',
