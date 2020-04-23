@@ -585,5 +585,4 @@ try {
   window.removeEventListener("testPassive", null, opts);
 } catch (e) {}
 
-// Use our detect's results. passive applied if supported, capture will be false either way.
-elem.addEventListener('touchstart', fn, supportsPassive ? { passive: true } : false); 
+elem.addEventListener('touchstart', fn, detectIt.passiveEvents ? {passive:true} : false);
