@@ -685,19 +685,21 @@
                                 <!-- start ng repeat Brands -->
                                 <li ng-repeat='br in brands'> 
                                     <div class="tm-ratio tm-ratio-16-9">
-                                        <a class="uk-link-muted tm-media-box tm-grayscale" href="#" title="{{br.title}}"><figure class="tm-media-box-wrap"><img data-src="images/brands/{{br.src}}.svg" class="lazyload" alt="{{br.alt}}"></figure></a>
+                                        <a class="uk-link-muted tm-media-box tm-grayscale" href="#" title="{{br.title}}">
+                                            <figure class="tm-media-box-wrap">
+                                                <img data-src="images/brands/{{br.src}}.svg" class="lazyload" alt="{{br.alt}}">
+                                            </figure>
+                                            </a>
                                     </div>
                                 </li>
                                 <!-- end ng repeat Brands -->
                             </ul>
                         </div>
-                        
                         <div class="uk-visible@m">
                             <a href="#" uk-slider-item="next" uk-slidenav-next></a>
                         </div>
                     </div>
                 </div>
-                <ul class="uk-slider-nav uk-flex-center uk-margin-medium-top uk-hidden@m"></ul>
             </div>
             <div class="uk-margin uk-text-center">
                 <a class="uk-link-muted uk-text-uppercase tm-link-to-all" href="brands.html"><span>see all brands</span><span uk-icon="icon: chevron-right; ratio: .75;"></span></a>
