@@ -129,7 +129,7 @@
                                         <!-- start ng-repeat Catalog dan Sub Catalog-->
                                         <li ng-repeat='ctl in catalog'>
                                             <div class="uk-margin-top uk-margin-bottom">
-                                                <a class="uk-link-reset" href="{{ctl.link0}}.html"><img class="uk-display-block uk-margin-auto uk-margin-bottom" src="{{ctl.src}}" alt="{{ctl.alt}}" width="80" height="80">
+                                                <a class="uk-link-reset" href="{{ctl.link0}}.html"><img class="uk-display-block uk-margin-auto uk-margin-bottom lazyload" data-src="{{ctl.src}}" alt="{{ctl.alt}}" width="80" height="80">
                                                 <div class="uk-text-bolder">{{ctl.title}}</div>
                                                 </a>
                                                 <ul class="uk-nav uk-nav-default">
@@ -280,7 +280,7 @@
                 <div class="uk-link-muted uk-text-center uk-display-block uk-padding-small uk-box-shadow-hover-large">
                     <div class="tm-ratio tm-ratio-4-3">
                         <div class="tm-media-box">
-                            <figure class="tm-media-box-wrap"><img class="item-brand" src="images/catalog/{{cat.src}}.png" alt="{{cat.alt}}"></figure>
+                            <figure class="tm-media-box-wrap"><img class="item-brand lazyload" data-src="images/catalog/{{cat.src}}.png" alt="{{cat.alt}}"></figure>
                         </div>
                     </div>
                     <a href="subcategory.html">
@@ -677,7 +677,7 @@
                                 <!-- start ng repeat Brands -->
                                 <li ng-repeat='br in brands'> 
                                     <div class="tm-ratio tm-ratio-16-9">
-                                        <a class="uk-link-muted tm-media-box tm-grayscale" href="#" title="{{br.title}}"><figure class="tm-media-box-wrap"><img src="images/brands/{{br.src}}.svg" alt="{{br.alt}}"></figure></a>
+                                        <a class="uk-link-muted tm-media-box tm-grayscale" href="#" title="{{br.title}}"><figure class="tm-media-box-wrap"><img data-src="images/brands/{{br.src}}.svg" class="lazyload" alt="{{br.alt}}"></figure></a>
                                     </div>
                                 </li>
                                 <!-- end ng repeat Brands -->
