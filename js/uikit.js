@@ -573,3 +573,8 @@ return chunks;}
 function stop(e){e.preventDefault();e.stopPropagation();}
 UIkit.component('countdown',Countdown);UIkit.component('filter',Filter);UIkit.component('lightbox',Lightbox);UIkit.component('lightboxPanel',LightboxPanel);UIkit.component('notification',Notification);UIkit.component('parallax',Parallax$1);UIkit.component('slider',Slider$1);UIkit.component('sliderParallax',SliderParallax);UIkit.component('slideshow',Slideshow$1);UIkit.component('slideshowParallax',SliderParallax);UIkit.component('sortable',Sortable);UIkit.component('tooltip',Tooltip);UIkit.component('upload',Upload);{boot(UIkit);}
 return UIkit;})));
+document.addEventListener("touchstart", function(e) {
+    console.log(e.defaultPrevented);  // will be false
+    e.preventDefault();   // does nothing since the listener is passive
+    console.log(e.defaultPrevented);  // still false
+}, Modernizr.passiveeventlisteners ? {passive: true} : false);
