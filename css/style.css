@@ -702,7 +702,7 @@ button.uk-icon:not(:disabled) {
 	outline:0;
 	background-color:#fff;
 	color:#c0292b;
-	border-color:#1e87f0
+	border-color:#f01e1e
 }
 .uk-input:disabled,.uk-select:disabled,.uk-textarea:disabled {
 	background-color:#f8f8f8;
@@ -1638,15 +1638,15 @@ select.uk-form-width-xsmall {
 	text-transform:uppercase
 }
 .uk-label-success {
-	background-color:#32d296;
+	background-color:#00ffa2;
 	color:#fff
 }
 .uk-label-warning {
-	background-color:#faa05a;
+	background-color:#ff6f00;
 	color:#fff
 }
 .uk-label-danger {
-	background-color:#f0506e;
+	background-color:#ff002f;
 	color:#fff
 }
 .uk-overlay {
@@ -5090,25 +5090,25 @@ iframe.uk-cover {
 	border-color:rgba(255,255,255,.7)
 }
 .uk-light .uk-input:-ms-input-placeholder,.uk-light .uk-textarea:-ms-input-placeholder {
-	color:rgba(255,255,255,.5)!important
+	color:rgba(255,255,255,.8)!important
 }
 .uk-light .uk-input::-webkit-input-placeholder {
-	color:rgba(255,255,255,.5)
+	color:rgba(255,255,255,.8)
 }
 .uk-light .uk-input::-ms-input-placeholder {
-	color:rgba(255,255,255,.5)
+	color:rgba(255,255,255,.8)
 }
 .uk-light .uk-input::placeholder {
-	color:rgba(255,255,255,.5)
+	color:rgba(255,255,255,.8)
 }
 .uk-light .uk-textarea::-webkit-input-placeholder {
-	color:rgba(255,255,255,.5)
+	color:rgba(255,255,255,.8)
 }
 .uk-light .uk-textarea::-ms-input-placeholder {
-	color:rgba(255,255,255,.5)
+	color:rgba(255,255,255,.8)
 }
 .uk-light .uk-textarea::placeholder {
-	color:rgba(255,255,255,.5)
+	color:rgba(255,255,255,.8)
 }
 .uk-light .uk-select:not([multiple]):not([size]) {
 	background-image:url(data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2224%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22rgba%28255,%20255,%20255,%200.7%29%22%20points%3D%2212%201%209%206%2015%206%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22rgba%28255,%20255,%20255,%200.7%29%22%20points%3D%2212%2013%209%208%2015%208%22%20%2F%3E%0A%3C%2Fsvg%3E%0A)
