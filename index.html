@@ -24,7 +24,7 @@
 <script src="js/uikit.js" type="text/javascript"></script>
 <script src="js/uikit-icons.js" type="text/javascript"></script>
 <script src="js/jquery-3.5.0.slim.min.js" type="text/javascript"></script>
-
+<script src="js/lazysizes.min.js" type="text/javascript"></script>
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/lightslider.css">
 
@@ -248,14 +248,14 @@
                   <li style="background-color: #ce071e">
                     <a href="#">
                       <figure class="uk-container uk-height-1-1">
-                        <img src="images/promo/iphone.jpg" alt="iPhone" width="1200" height="600" uk-cover>
+                        <img src="images/promo/iphone.jpg" class="lazyload" alt="iPhone" width="1200" height="600" uk-cover>
                       </figure>
                     </a>
                   </li>
                   <li style="background-color: #1f2024">
                     <a href="#">
                       <figure class="uk-container uk-height-1-1">
-                        <img src="images/promo/ipad.jpg" alt="iPad" width="1200" height="600" uk-cover>
+                        <img src="images/promo/ipad.jpg" class="lazyload" alt="iPad" width="1200" height="600" uk-cover>
                       </figure>
                     </a>
                   </li>
@@ -359,7 +359,7 @@
                                 <div class="tm-product-card-labels">
                                     <span class="uk-label uk-label-success">new</span><span class="uk-label uk-label-danger">trade-in</span>
                                 </div>
-                                <figure class="tm-media-box-wrap"><img src="images/products/2/2-medium.jpg" alt="Apple MacBook 12&quot; MNYN2LL/A 512GB (Rose Gold)"/></figure></a>
+                                <figure class="tm-media-box-wrap"><img src="images/products/2/2-medium.jpg" class="lazyload" alt="Apple MacBook 12&quot; MNYN2LL/A 512GB (Rose Gold)"/></figure></a>
                             </div>
                         </div>
                         <div class="tm-product-card-body">
@@ -400,7 +400,7 @@
                     <article class="tm-product-card">
                         <div class="tm-product-card-media">
                             <div class="tm-ratio tm-ratio-4-3">
-                                <a class="tm-media-box" href="product.html"><figure class="tm-media-box-wrap"><img src="images/products/3/3-medium.jpg" alt="Lenovo IdeaPad YOGA 920-13IKB 80Y7001RRK (Copper)"/></figure></a>
+                                <a class="tm-media-box" href="product.html"><figure class="tm-media-box-wrap"><img src="images/products/3/3-medium.jpg" class="lazyload" alt="Lenovo IdeaPad YOGA 920-13IKB 80Y7001RRK (Copper)"/></figure></a>
                             </div>
                         </div>
                         <div class="tm-product-card-body">
@@ -445,7 +445,7 @@
                                 <div class="tm-product-card-labels">
                                     <span class="uk-label uk-label-warning">top selling</span>
                                 </div>
-                                <figure class="tm-media-box-wrap"><img src="images/products/4/4-medium.jpg" alt="ASUS Zenbook UX330UA-FC020T (Rose Gold)"/></figure></a>
+                                <figure class="tm-media-box-wrap"><img src="images/products/4/4-medium.jpg" class="lazyload" alt="ASUS Zenbook UX330UA-FC020T (Rose Gold)"/></figure></a>
                             </div>
                         </div>
                         <div class="tm-product-card-body">
@@ -486,7 +486,7 @@
                     <article class="tm-product-card">
                         <div class="tm-product-card-media">
                             <div class="tm-ratio tm-ratio-4-3">
-                                <a class="tm-media-box" href="product.html"><figure class="tm-media-box-wrap"><img src="images/products/5/5-medium.jpg" alt="Dell XPS 15 9560-8968 (Silver)"/></figure></a>
+                                <a class="tm-media-box" href="product.html"><figure class="tm-media-box-wrap"><img src="images/products/5/5-medium.jpg" class="lazyload" alt="Dell XPS 15 9560-8968 (Silver)"/></figure></a>
                             </div>
                         </div>
                         <div class="tm-product-card-body">
@@ -532,7 +532,7 @@
                                 <div class="tm-product-card-labels">
                                     <span class="uk-label uk-label-danger">trade-in</span>
                                 </div>
-                                <figure class="tm-media-box-wrap"><img src="images/products/6/6-medium.jpg" alt="Apple MacBook Air 13&quot; MQD32LL/A 128GB (Silver)"/></figure></a>
+                                <figure class="tm-media-box-wrap"><img src="images/products/6/6-medium.jpg" class="lazyload" alt="Apple MacBook Air 13&quot; MQD32LL/A 128GB (Silver)"/></figure></a>
                             </div>
                         </div>
                         <div class="tm-product-card-body">
@@ -573,7 +573,7 @@
                     <article class="tm-product-card">
                         <div class="tm-product-card-media">
                             <div class="tm-ratio tm-ratio-4-3">
-                                <a class="tm-media-box" href="product.html"><figure class="tm-media-box-wrap"><img src="images/products/7/7-medium.jpg" alt="Dell Inspiron 5378-2063 (Gray)"/></figure></a>
+                                <a class="tm-media-box" href="product.html"><figure class="tm-media-box-wrap"><img src="images/products/7/7-medium.jpg" class="lazyload" alt="Dell Inspiron 5378-2063 (Gray)"/></figure></a>
                             </div>
                         </div>
                         <div class="tm-product-card-body">
@@ -619,7 +619,7 @@
                                 <div class="tm-product-card-labels">
                                     <span class="uk-label uk-label-success">new</span>
                                 </div>
-                                <figure class="tm-media-box-wrap"><img src="images/products/8/8-medium.jpg" alt="Lenovo Yoga 720-13IKB 80X60059RK (Silver)"/></figure></a>
+                                <figure class="tm-media-box-wrap"><img src="images/products/8/8-medium.jpg" class="lazyload" alt="Lenovo Yoga 720-13IKB 80X60059RK (Silver)"/></figure></a>
                             </div>
                         </div>
                         <div class="tm-product-card-body">
@@ -1122,6 +1122,7 @@
     <script src="js/angular.min.js" type="text/javascript"></script>
     <script src="js/controller.js" type="text/javascript"></script>
     <!-- End Angular JS -->
+    
     <script src="js/script.js" type="text/javascript"></script>
     <script src="js/lightslider.js" type="text/javascript"></script>
     <script>
