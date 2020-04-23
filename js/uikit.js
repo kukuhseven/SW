@@ -573,16 +573,3 @@ return chunks;}
 function stop(e){e.preventDefault();e.stopPropagation();}
 UIkit.component('countdown',Countdown);UIkit.component('filter',Filter);UIkit.component('lightbox',Lightbox);UIkit.component('lightboxPanel',LightboxPanel);UIkit.component('notification',Notification);UIkit.component('parallax',Parallax$1);UIkit.component('slider',Slider$1);UIkit.component('sliderParallax',SliderParallax);UIkit.component('slideshow',Slideshow$1);UIkit.component('slideshowParallax',SliderParallax);UIkit.component('sortable',Sortable);UIkit.component('tooltip',Tooltip);UIkit.component('upload',Upload);{boot(UIkit);}
 return UIkit;})));
-// Test via a getter in the options object to see if the passive property is accessed
-var supportsPassive = false;
-try {
-  var opts = Object.defineProperty({}, 'passive', {
-    get: function() {
-      supportsPassive = true;
-    }
-  });
-  window.addEventListener("testPassive", null, opts);
-  window.removeEventListener("testPassive", null, opts);
-} catch (e) {}
-
-elem.addEventListener('touchstart', fn, detectIt.passiveEvents ? {passive:true} : false);
