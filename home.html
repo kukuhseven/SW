@@ -20,206 +20,206 @@
 <link rel="apple-touch-icon" sizes="180x180" href="images/apple_icons/touch-icon-iphone-retina.png">
 <link rel="apple-touch-icon" sizes="167x167" href="images/apple_icons/touch-icon-ipad-retina.png">
 <link rel="manifest" href="manifest.json">
-
-
+	
 <script src="js/uikit.js" type="text/javascript"></script>
 <script src="js/uikit-icons.js" type="text/javascript"></script>
 <script src="js/jquery-3.5.0.slim.min.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/lightslider.css">
 
 </head>
 <body ng-app="maxi" ng-controller="maxikomp">
-	<div class="uk-offcanvas-content">
-		<header>
-		<div class="uk-navbar-container uk-light uk-visible@m tm-toolbar-container">
-			<div class="uk-container" uk-navbar>
-				<div class="uk-navbar-left">
-					<nav>
-					<ul class="uk-navbar-nav">
-						<li>
-							<a href="contacts.html" onclick="return false">
-								<span class="uk-margin-xsmall-right" uk-icon="icon: receiver; ratio: .75;"></span>
-								<span class="tm-pseudo">{{telepon}}</span>
-								<span uk-icon="icon: triangle-down; ratio: .75;"></span>
-							</a>
-							<div class="uk-margin-remove" uk-drop="mode: click; pos: bottom-center;">
-								<div class="uk-card uk-card-default uk-card-small uk-box-shadow-xlarge uk-overflow-hidden uk-padding-small uk-padding-remove-horizontal uk-padding-remove-bottom">
-									<div class="uk-card-body">
-										<div class="uk-text-small">
-											<div class="uk-text-bolder">Contact Number</div>
-											<div>{{telepon}}</div>
-											<div>{{wa}}</div>
-										</div>
-									</div>
-								</div>
-							</div>		
-						</li>
-						<li>
-							<a href="contacts.html" onclick="return false">
-							<span class="uk-margin-xsmall-right" uk-icon="icon: location; ratio: .75;"></span>
-							<span class="tm-pseudo">{{alamat1}}</span>
-							<span uk-icon="icon: triangle-down; ratio: .75;"></span>
-							</a>
-							<div class="uk-margin-remove" uk-drop="mode: click; pos: bottom-center;">
-								<div class="uk-card uk-card-default uk-card-small uk-box-shadow-xlarge uk-overflow-hidden uk-padding-small uk-padding-remove-horizontal uk-padding-remove-bottom">
-									<div class="uk-card-body">
-										<div class="uk-text-small">
-											<div class="uk-text-bolder">{{nama}}</div>
-											<div>{{alamat3}}</div>
-										</div>
-										<div class="uk-margin-small">
-											<a class="uk-link-muted uk-text-uppercase tm-link-to-all uk-link-reset" href="contacts.html"><span>contacts</span><span uk-icon="icon: chevron-right; ratio: .75;"></span></a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</li>
-						<li>
-							<a href="contacts.html" onclick="return false">
-								<span class="uk-margin-xsmall-right" uk-icon="icon: clock; ratio: .75;"></span>
-								<span class="tm-pseudo">{{jambuka}}</span>
-								<span uk-icon="icon: triangle-down; ratio: .75;"></span>
-							</a>
-							<div class="uk-margin-remove" uk-drop="mode: click; pos: bottom-center;">
-								<div class="uk-card uk-card-default uk-card-small uk-box-shadow-xlarge uk-overflow-hidden uk-padding-small uk-padding-remove-horizontal uk-padding-remove-bottom">
-									<div class="uk-card-body">
-										<div class="uk-text-small">
-											<div class="uk-text-bolder">Daily Open At</div>
-											<div>Senin - Jumat &nbsp;&nbsp;&nbsp;: 09.00 - 21.00</div>
-											<div>Sabtu - Minggu : 09.00 - 16.00</div>
-										</div>
-									</div>
-								</div>
-							</div>		
-						</li>
-					</ul>
-					</nav>
-				</div>
-				<div class="uk-navbar-right">
-					<nav>
-					<ul class="uk-navbar-nav">
-						<li>
-							<a href="news.html">News</a>
-						</li>
-						<li>
-							<a href="faq.html">FAQ</a>
-						</li>
-						<li>
-							<a href="#">Payment</a>
-						</li>
-					</ul>
-					</nav>
-				</div>
-			</div>
-		</div>
-		<div class="uk-navbar-container tm-navbar-container" uk-sticky="cls-active: tm-navbar-container-fixed">
-			<div class="uk-container" uk-navbar>
-				<div class="uk-navbar-left">
-					<button class="uk-navbar-toggle uk-hidden@m" uk-toggle="target: #nav-offcanvas" uk-navbar-toggle-icon></button>
-					<a class="uk-navbar-item uk-logo" href="home.html"><img src="images/logo.svg" width="100" height="32" alt="Logo"></a>
-					<nav class="uk-visible@m">
-					<ul class="uk-navbar-nav">
-						<li>
-							<a href="catalog.html">Catalog<span class="uk-margin-xsmall-left" uk-icon="icon: chevron-down; ratio: .75;"></span></a>
-							<div class="uk-navbar-dropdown uk-margin-remove uk-padding-remove-vertical" uk-drop="pos: bottom-justify;delay-show: 125;delay-hide: 50;duration: 75;boundary: .tm-navbar-container;boundary-align: true;pos: bottom-justify;flip: x">
-								<div class="uk-container">
-									<ul class="uk-navbar-dropdown-grid uk-child-width-1-5" uk-grid>
-										<!-- start ng-repeat Catalog dan Sub Catalog-->
-										<li ng-repeat='ctl in catalog'>
-											<div class="uk-margin-top uk-margin-bottom">
-												<a class="uk-link-reset" href="{{ctl.link0}}.html"><img class="uk-display-block uk-margin-auto uk-margin-bottom" src="{{ctl.src}}" alt="{{ctl.alt}}" width="80" height="80">
-												<div class="uk-text-bolder">{{ctl.title}}</div>
-												</a>
-												<ul class="uk-nav uk-nav-default">
-													<li>
-														<a href="{{ctl.link1}}.html">{{ctl.sub1}}</a>
-													</li>
-													<li>
-														<a href="{{ctl.link2}}.html">{{ctl.sub2}}</a>
-													</li>
-													<li>
-														<a href="{{ctl.link3}}.html">{{ctl.sub3}}</a>
-													</li>
-													<li>
-														<a href="{{ctl.link4}}.html">{{ctl.sub4}}</a>
-													</li>
-													<li>
-														<a href="{{ctl.link5}}.html">{{ctl.sub5}}</a>
-													</li>
-												</ul>
-											</div>
-										</li>
-										<!-- end ng-repeat Catalog dan Sub Catalog-->
-									</ul>
-								</div>
-							</div>
-						</li>
-						<li>
-							<a href="brands.html">Brands<span class="uk-margin-xsmall-left" uk-icon="icon: chevron-down; ratio: .75;"></span></a>
-							<div class="uk-navbar-dropdown uk-margin-remove uk-padding-remove-vertical" uk-drop="pos: bottom-justify;delay-show: 125;delay-hide: 50;duration: 75;boundary: .tm-navbar-container;boundary-align: true;pos: bottom-justify;flip: x">
-								<div class="uk-container uk-container-small uk-margin-top uk-margin-bottom">
-									<ul class="uk-grid-small uk-child-width-1-6" uk-grid>
-										<!-- start ng-repeat Brands Header -->
-										<li ng-repeat='br in brands2'>
-											<div class="tm-ratio tm-ratio-4-3">
-												<a class="uk-link-muted uk-text-center uk-display-block uk-padding-small uk-box-shadow-hover-large tm-media-box" href="#" title="{{br.title}}"><figure class="tm-media-box-wrap"><img src="images/brands/{{br.src}}.svg" alt="{{br.alt}}"></figure></a>
-											</div>
-										</li>
-										<!-- end ng-repeat Brands Header -->
-									</ul>
-									<div class="uk-text-center uk-margin">
-										<a class="uk-link-muted uk-text-uppercase tm-link-to-all" href="brands.html"><span>See all brands</span><span uk-icon="icon: chevron-right; ratio: .75;"></span></a>
-									</div>
-								</div>
-							</div>
-						</li>
-						<li>
-							<a href="#">Pages<span class="uk-margin-xsmall-left" uk-icon="icon: chevron-down; ratio: .75;"></span></a>
-							<div class="uk-navbar-dropdown uk-margin-remove uk-padding-remove-vertical" uk-drop="pos: bottom-justify;delay-show: 125;delay-hide: 50;duration: 75;boundary: .tm-navbar-container;boundary-align: true;pos: bottom-justify;flip: x">
-								<div class="uk-container uk-container-small uk-margin-top uk-margin-bottom">
-									<ul class="uk-nav uk-nav-default uk-column-1-3">
-										<!-- start ng-repeat Pages Header -->
-										<li ng-repeat='pg in pages'>
-											<a href="{{pg.link}}.html">{{pg.title}}</a>
-										</li>
-										<!-- end ng-repeat Pages Header -->
-									</ul>
-								</div>
-							</div>
-						</li>
-						<li>
-							<a href="blog.html">Blog</a>
-						</li>
-						<li>
-							<a href="about.html">About</a>
-						</li>
-						<li>
-							<a href="contacts.html">Contacts</a>
-						</li>
-					</ul>
-					</nav>
-				</div>
-				<div class="uk-navbar-right">
-					<a class="uk-navbar-toggle tm-navbar-button" href="#" uk-search-icon></a>
-					<div class="uk-navbar-dropdown uk-padding-small uk-margin-remove" uk-drop="mode: click;cls-drop: uk-navbar-dropdown;boundary: .tm-navbar-container;boundary-align: true;pos: bottom-justify;flip: x">
-						<div class="uk-container">
-							<div class="uk-grid-small uk-flex-middle" uk-grid>
-								<div class="uk-width-expand">
-									<form class="uk-search uk-search-navbar uk-width-1-1">
-										<input class="uk-search-input" type="search" placeholder="Search…" autofocus></form>
-								</div>
-								<div class="uk-width-auto">
-									<a class="uk-navbar-dropdown-close" href="#" uk-close></a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<a class="uk-navbar-item uk-link-muted uk-visible@m tm-navbar-button" href="compare.html"><span uk-icon="copy"></span><span class="uk-badge">3</span></a><a class="uk-navbar-item uk-link-muted tm-navbar-button" href="account.html" uk-icon="user"></a>
-					<div class="uk-padding-small uk-margin-remove" uk-dropdown="pos: bottom-right; offset: -10; delay-hide: 200;" style="min-width: 150px;">
-						<ul class="uk-nav uk-dropdown-nav">
+    <div class="uk-offcanvas-content">
+        <header>
+        <div class="uk-navbar-container uk-light uk-visible@m tm-toolbar-container">
+            <div class="uk-container" uk-navbar>
+                <div class="uk-navbar-left">
+                    <nav>
+                    <ul class="uk-navbar-nav">
+                        <li>
+                            <a href="contacts.html" onclick="return false">
+                                <span class="uk-margin-xsmall-right" uk-icon="icon: receiver; ratio: .75;"></span>
+                                <span class="tm-pseudo">{{telepon}}</span>
+                                <span uk-icon="icon: triangle-down; ratio: .75;"></span>
+                            </a>
+                            <div class="uk-margin-remove" uk-drop="mode: click; pos: bottom-center;">
+                                <div class="uk-card uk-card-default uk-card-small uk-box-shadow-xlarge uk-overflow-hidden uk-padding-small uk-padding-remove-horizontal uk-padding-remove-bottom">
+                                    <div class="uk-card-body">
+                                        <div class="uk-text-small">
+                                            <div class="uk-text-bolder">Contact Number</div>
+                                            <div>{{telepon}}</div>
+                                            <div>{{wa}}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>		
+                        </li>
+                        <li>
+                            <a href="contacts.html" onclick="return false">
+                            <span class="uk-margin-xsmall-right" uk-icon="icon: location; ratio: .75;"></span>
+                            <span class="tm-pseudo">{{alamat1}}</span>
+                            <span uk-icon="icon: triangle-down; ratio: .75;"></span>
+                            </a>
+                            <div class="uk-margin-remove" uk-drop="mode: click; pos: bottom-center;">
+                                <div class="uk-card uk-card-default uk-card-small uk-box-shadow-xlarge uk-overflow-hidden uk-padding-small uk-padding-remove-horizontal uk-padding-remove-bottom">
+                                    <div class="uk-card-body">
+                                        <div class="uk-text-small">
+                                            <div class="uk-text-bolder">{{nama}}</div>
+                                            <div>{{alamat3}}</div>
+                                        </div>
+                                        <div class="uk-margin-small">
+                                            <a class="uk-link-muted uk-text-uppercase tm-link-to-all uk-link-reset" href="contacts.html"><span>contacts</span><span uk-icon="icon: chevron-right; ratio: .75;"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="contacts.html" onclick="return false">
+                                <span class="uk-margin-xsmall-right" uk-icon="icon: clock; ratio: .75;"></span>
+                                <span class="tm-pseudo">{{jambuka}}</span>
+                                <span uk-icon="icon: triangle-down; ratio: .75;"></span>
+                            </a>
+                            <div class="uk-margin-remove" uk-drop="mode: click; pos: bottom-center;">
+                                <div class="uk-card uk-card-default uk-card-small uk-box-shadow-xlarge uk-overflow-hidden uk-padding-small uk-padding-remove-horizontal uk-padding-remove-bottom">
+                                    <div class="uk-card-body">
+                                        <div class="uk-text-small">
+                                            <div class="uk-text-bolder">Daily Open At</div>
+                                            <div>Senin - Jumat &nbsp;&nbsp;&nbsp;: 09.00 - 21.00</div>
+                                            <div>Sabtu - Minggu : 09.00 - 16.00</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>		
+                        </li>
+                    </ul>
+                    </nav>
+                </div>
+                <div class="uk-navbar-right">
+                    <nav>
+                    <ul class="uk-navbar-nav">
+                        <li>
+                            <a href="news.html">News</a>
+                        </li>
+                        <li>
+                            <a href="faq.html">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#">Payment</a>
+                        </li>
+                    </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="uk-navbar-container tm-navbar-container" uk-sticky="cls-active: tm-navbar-container-fixed">
+            <div class="uk-container" uk-navbar>
+                <div class="uk-navbar-left">
+                    <button class="uk-navbar-toggle uk-hidden@m" aria-label="navbar" uk-toggle="target: #nav-offcanvas" uk-navbar-toggle-icon></button>
+                    <a class="uk-navbar-item uk-logo" href="home.html">
+                        <img src="images/logo.svg" width="100" height="32" alt="Logo">
+                    </a>
+                    <nav class="uk-visible@m">
+                    <ul class="uk-navbar-nav">
+                        <li>
+                            <a href="catalog.html">Catalog<span class="uk-margin-xsmall-left" uk-icon="icon: chevron-down; ratio: .75;"></span></a>
+                            <div class="uk-navbar-dropdown uk-margin-remove uk-padding-remove-vertical" uk-drop="pos: bottom-justify;delay-show: 125;delay-hide: 50;duration: 75;boundary: .tm-navbar-container;boundary-align: true;pos: bottom-justify;flip: x">
+                                <div class="uk-container">
+                                    <ul class="uk-navbar-dropdown-grid uk-child-width-1-5" uk-grid>
+                                        <!-- start ng-repeat Catalog dan Sub Catalog-->
+                                        <li ng-repeat='ctl in catalog'>
+                                            <div class="uk-margin-top uk-margin-bottom">
+                                                <a class="uk-link-reset" href="{{ctl.link0}}.html"><img class="uk-display-block uk-margin-auto uk-margin-bottom lazyload" data-src="{{ctl.src}}" alt="{{ctl.alt}}" width="80" height="80">
+                                                <div class="uk-text-bolder">{{ctl.title}}</div>
+                                                </a>
+                                                <ul class="uk-nav uk-nav-default">
+                                                    <li>
+                                                        <a href="{{ctl.link1}}.html">{{ctl.sub1}}</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{{ctl.link2}}.html">{{ctl.sub2}}</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{{ctl.link3}}.html">{{ctl.sub3}}</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{{ctl.link4}}.html">{{ctl.sub4}}</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{{ctl.link5}}.html">{{ctl.sub5}}</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <!-- end ng-repeat Catalog dan Sub Catalog-->
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="brands.html">Brands<span class="uk-margin-xsmall-left" uk-icon="icon: chevron-down; ratio: .75;"></span></a>
+                            <div class="uk-navbar-dropdown uk-margin-remove uk-padding-remove-vertical" uk-drop="pos: bottom-justify;delay-show: 125;delay-hide: 50;duration: 75;boundary: .tm-navbar-container;boundary-align: true;pos: bottom-justify;flip: x">
+                                <div class="uk-container uk-container-small uk-margin-top uk-margin-bottom">
+                                    <ul class="uk-grid-small uk-child-width-1-6" uk-grid>
+                                        <!-- start ng-repeat Brands Header -->
+                                        <li ng-repeat='br in brands2'>
+                                            <div class="tm-ratio tm-ratio-4-3">
+                                                <a class="uk-link-muted uk-text-center uk-display-block uk-padding-small uk-box-shadow-hover-large tm-media-box" href="#" title="{{br.title}}"><figure class="tm-media-box-wrap"><img data-src="images/brands/{{br.src}}.svg" class="lazyload" alt="{{br.alt}}"></figure></a>
+                                            </div>
+                                        </li>
+                                        <!-- end ng-repeat Brands Header -->
+                                    </ul>
+                                    <div class="uk-text-center uk-margin">
+                                        <a class="uk-link-muted uk-text-uppercase tm-link-to-all" href="brands.html"><span>See all brands</span><span uk-icon="icon: chevron-right; ratio: .75;"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">Pages<span class="uk-margin-xsmall-left" uk-icon="icon: chevron-down; ratio: .75;"></span></a>
+                            <div class="uk-navbar-dropdown uk-margin-remove uk-padding-remove-vertical" uk-drop="pos: bottom-justify;delay-show: 125;delay-hide: 50;duration: 75;boundary: .tm-navbar-container;boundary-align: true;pos: bottom-justify;flip: x">
+                                <div class="uk-container uk-container-small uk-margin-top uk-margin-bottom">
+                                    <ul class="uk-nav uk-nav-default uk-column-1-3">
+                                        <!-- start ng-repeat Pages Header -->
+                                        <li ng-repeat='pg in pages'>
+                                            <a href="{{pg.link}}.html">{{pg.title}}</a>
+                                        </li>
+                                        <!-- end ng-repeat Pages Header -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="blog.html">Blog</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="contacts.html">Contacts</a>
+                        </li>
+                    </ul>
+                    </nav>
+                </div>
+                <div class="uk-navbar-right">
+                    <a class="uk-navbar-toggle tm-navbar-button" href="#" uk-search-icon></a>
+                    <div class="uk-navbar-dropdown uk-padding-small uk-margin-remove" uk-drop="mode: click;cls-drop: uk-navbar-dropdown;boundary: .tm-navbar-container;boundary-align: true;pos: bottom-justify;flip: x">
+                        <div class="uk-container">
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <div class="uk-width-expand">
+                                    <form class="uk-search uk-search-navbar uk-width-1-1">
+                                        <input class="uk-search-input" type="search" placeholder="Search…" autofocus></form>
+                                </div>
+                                <div class="uk-width-auto">
+                                    <a class="uk-navbar-dropdown-close" href="#" uk-close></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="uk-navbar-item uk-link-muted uk-visible@m tm-navbar-button" href="compare.html"><span uk-icon="copy"></span><span class="uk-badge">3</span></a><a class="uk-navbar-item uk-link-muted tm-navbar-button" href="account.html" uk-icon="user"></a>
+                    <div class="uk-padding-small uk-margin-remove" uk-dropdown="pos: bottom-right; offset: -10; delay-hide: 200;" style="min-width: 150px;">
+                        <ul class="uk-nav uk-dropdown-nav">
 							<li>
 								<a href="account.html">Orders<span>(2)</span></a>
 							</li>
@@ -241,12 +241,12 @@
 								</a>
 							</li>
 						</ul>
-					</div>
-					<a class="uk-navbar-item uk-link-muted tm-navbar-button" href="cart.html" uk-toggle="target: #cart-offcanvas" onclick="return false"><span uk-icon="cart"></span><span class="uk-badge">2</span></a>
-				</div>
-			</div>
-		</div></header>
-		<main>
+                    </div>
+                    <a class="uk-navbar-item uk-link-muted tm-navbar-button" href="cart.html" uk-toggle="target: #cart-offcanvas" onclick="return false"><span uk-icon="cart"></span><span class="uk-badge">2</span></a>
+                </div>
+            </div>
+        </div></header>
+        <main>
             <!---------------------------------------- CAROUSEL ----------------------------------------->   
             <section class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="min-height: 300; max-height: 600;">
                 <ul class="uk-slideshow-items">
@@ -260,14 +260,14 @@
                   <li style="background-color: #ce071e">
                     <a href="#">
                       <figure class="uk-container uk-height-1-1">
-                        <img src="images/promo/iphone.jpg" alt="iPhone" width="1200" height="600" uk-cover>
+                        <img data-src="images/promo/iphone.jpg" class="lazyload" alt="iPhone" width="1200" height="600" uk-cover>
                       </figure>
                     </a>
                   </li>
                   <li style="background-color: #1f2024">
                     <a href="#">
                       <figure class="uk-container uk-height-1-1">
-                        <img src="images/promo/ipad.jpg" alt="iPad" width="1200" height="600" uk-cover>
+                        <img data-src="images/promo/ipad.jpg" class="lazyload" alt="iPad" width="1200" height="600" uk-cover>
                       </figure>
                     </a>
                   </li>
@@ -292,7 +292,7 @@
                 <div class="uk-link-muted uk-text-center uk-display-block uk-padding-small uk-box-shadow-hover-large">
                     <div class="tm-ratio tm-ratio-4-3">
                         <div class="tm-media-box">
-                            <figure class="tm-media-box-wrap"><img class="item-brand" src="images/catalog/{{cat.src}}.png" alt="{{cat.alt}}"></figure>
+                            <figure class="tm-media-box-wrap"><img class="item-brand lazyload" data-src="images/catalog/{{cat.src}}.png" alt="{{cat.alt}}"></figure>
                         </div>
                     </div>
                     <a href="subcategory.html">
@@ -325,7 +325,7 @@
                             <div class="tm-product-card-labels">
                                 <span class="uk-label uk-label-warning">top selling</span><span class="uk-label uk-label-danger">trade-in</span>
                             </div>
-                            <figure class="tm-media-box-wrap"><img src="images/products/1/1-medium.jpg" alt="Apple MacBook Pro 15&quot; Touch Bar MPTU2LL/A 256GB (Silver)"/></figure></a>
+                            <figure class="tm-media-box-wrap"><img data-src="images/products/1/1-medium.jpg" class="lazyload" alt="Apple MacBook Pro 15&quot; Touch Bar MPTU2LL/A 256GB (Silver)"/></figure></a>
                         </div>
                     </div>
                     <div class="tm-product-card-body">
@@ -354,7 +354,14 @@
                             </div>
                             <div class="tm-product-card-add">
                                 <div class="uk-text-meta tm-product-card-actions">
-                                    <a class="tm-product-card-action js-add-to js-add-to-favorites tm-action-button-active js-added-to" title="Add to favorites"><span uk-icon="icon: heart; ratio: .75;"></span><span class="tm-product-card-action-text">Add to favorites</span></a><a class="tm-product-card-action js-add-to js-add-to-compare tm-action-button-active js-added-to" title="Add to compare"><span uk-icon="icon: copy; ratio: .75;"></span><span class="tm-product-card-action-text">Add to compare</span></a>
+                                    <a class="tm-product-card-action js-add-to js-add-to-favorites tm-action-button-active js-added-to" title="Add to favorites">
+                                        <span uk-icon="icon: heart; ratio: .75;"></span>
+                                        <span class="tm-product-card-action-text">Add to favorites</span>
+                                    </a>
+                                    <a class="tm-product-card-action js-add-to js-add-to-compare tm-action-button-active js-added-to" title="Add to compare">
+                                        <span uk-icon="icon: copy; ratio: .75;"></span>
+                                        <span class="tm-product-card-action-text">Add to compare</span>
+                                    </a>
                                 </div>
                                 <button class="uk-button uk-button-primary tm-product-card-add-button tm-shine js-add-to-cart" aria-label="add to cart">
                                     <span class="tm-product-card-add-button-icon" uk-icon="cart"></span>
@@ -371,7 +378,7 @@
                                 <div class="tm-product-card-labels">
                                     <span class="uk-label uk-label-success">new</span><span class="uk-label uk-label-danger">trade-in</span>
                                 </div>
-                                <figure class="tm-media-box-wrap"><img src="images/products/2/2-medium.jpg" alt="Apple MacBook 12&quot; MNYN2LL/A 512GB (Rose Gold)"/></figure></a>
+                                <figure class="tm-media-box-wrap"><img data-src="images/products/2/2-medium.jpg" class="lazyload" alt="Apple MacBook 12&quot; MNYN2LL/A 512GB (Rose Gold)"/></figure></a>
                             </div>
                         </div>
                         <div class="tm-product-card-body">
@@ -401,7 +408,7 @@
                                     <div class="uk-text-meta tm-product-card-actions">
                                         <a class="tm-product-card-action js-add-to js-add-to-favorites tm-action-button-active js-added-to" title="Add to favorites"><span uk-icon="icon: heart; ratio: .75;"></span><span class="tm-product-card-action-text">Add to favorites</span></a><a class="tm-product-card-action js-add-to js-add-to-compare tm-action-button-active js-added-to" title="Add to compare"><span uk-icon="icon: copy; ratio: .75;"></span><span class="tm-product-card-action-text">Add to compare</span></a>
                                     </div>
-                                    <button class="uk-button uk-button-primary tm-product-card-add-button tm-shine js-add-to-cart" aria-label="add to cart">
+                                    <button aria-label="add to cart" class="uk-button uk-button-primary tm-product-card-add-button tm-shine js-add-to-cart">
                                         <span class="tm-product-card-add-button-icon" uk-icon="cart"></span>
                                         <span class="tm-product-card-add-button-text">add to cart</span>
                                     </button>
@@ -412,7 +419,7 @@
                     <article class="tm-product-card">
                         <div class="tm-product-card-media">
                             <div class="tm-ratio tm-ratio-4-3">
-                                <a class="tm-media-box" href="product.html"><figure class="tm-media-box-wrap"><img src="images/products/3/3-medium.jpg" alt="Lenovo IdeaPad YOGA 920-13IKB 80Y7001RRK (Copper)"/></figure></a>
+                                <a class="tm-media-box" href="product.html"><figure class="tm-media-box-wrap"><img data-src="images/products/3/3-medium.jpg" class="lazyload" alt="Lenovo IdeaPad YOGA 920-13IKB 80Y7001RRK (Copper)"/></figure></a>
                             </div>
                         </div>
                         <div class="tm-product-card-body">
@@ -442,7 +449,7 @@
                                     <div class="uk-text-meta tm-product-card-actions">
                                         <a class="tm-product-card-action js-add-to js-add-to-favorites tm-action-button-active js-added-to" title="Add to favorites"><span uk-icon="icon: heart; ratio: .75;"></span><span class="tm-product-card-action-text">Add to favorites</span></a><a class="tm-product-card-action js-add-to js-add-to-compare" title="Add to compare"><span uk-icon="icon: copy; ratio: .75;"></span><span class="tm-product-card-action-text">Add to compare</span></a>
                                     </div>
-                                    <button class="uk-button uk-button-primary tm-product-card-add-button tm-shine js-add-to-cart" aria-label="add to cart">
+                                    <button aria-label="add to cart" class="uk-button uk-button-primary tm-product-card-add-button tm-shine js-add-to-cart">
                                         <span class="tm-product-card-add-button-icon" uk-icon="cart"></span>
                                         <span class="tm-product-card-add-button-text">add to cart</span>
                                     </button>
@@ -457,7 +464,7 @@
                                 <div class="tm-product-card-labels">
                                     <span class="uk-label uk-label-warning">top selling</span>
                                 </div>
-                                <figure class="tm-media-box-wrap"><img src="images/products/4/4-medium.jpg" alt="ASUS Zenbook UX330UA-FC020T (Rose Gold)"/></figure></a>
+                                <figure class="tm-media-box-wrap"><img data-src="images/products/4/4-medium.jpg" class="lazyload" alt="ASUS Zenbook UX330UA-FC020T (Rose Gold)"/></figure></a>
                             </div>
                         </div>
                         <div class="tm-product-card-body">
@@ -487,7 +494,7 @@
                                     <div class="uk-text-meta tm-product-card-actions">
                                         <a class="tm-product-card-action js-add-to js-add-to-favorites" title="Add to favorites"><span uk-icon="icon: heart; ratio: .75;"></span><span class="tm-product-card-action-text">Add to favorites</span></a><a class="tm-product-card-action js-add-to js-add-to-compare" title="Add to compare"><span uk-icon="icon: copy; ratio: .75;"></span><span class="tm-product-card-action-text">Add to compare</span></a>
                                     </div>
-                                    <button class="uk-button uk-button-primary tm-product-card-add-button tm-shine js-add-to-cart" aria-label="add to cart">
+                                    <button aria-label="add to cart" class="uk-button uk-button-primary tm-product-card-add-button tm-shine js-add-to-cart">
                                         <span class="tm-product-card-add-button-icon" uk-icon="cart"></span>
                                         <span class="tm-product-card-add-button-text">add to cart</span>
                                     </button>
@@ -498,7 +505,7 @@
                     <article class="tm-product-card">
                         <div class="tm-product-card-media">
                             <div class="tm-ratio tm-ratio-4-3">
-                                <a class="tm-media-box" href="product.html"><figure class="tm-media-box-wrap"><img src="images/products/5/5-medium.jpg" alt="Dell XPS 15 9560-8968 (Silver)"/></figure></a>
+                                <a class="tm-media-box" href="product.html"><figure class="tm-media-box-wrap"><img data-src="images/products/5/5-medium.jpg" class="lazyload" alt="Dell XPS 15 9560-8968 (Silver)"/></figure></a>
                             </div>
                         </div>
                         <div class="tm-product-card-body">
@@ -529,7 +536,7 @@
                                     <div class="uk-text-meta tm-product-card-actions">
                                         <a class="tm-product-card-action js-add-to js-add-to-favorites" title="Add to favorites"><span uk-icon="icon: heart; ratio: .75;"></span><span class="tm-product-card-action-text">Add to favorites</span></a><a class="tm-product-card-action js-add-to js-add-to-compare" title="Add to compare"><span uk-icon="icon: copy; ratio: .75;"></span><span class="tm-product-card-action-text">Add to compare</span></a>
                                     </div>
-                                    <button class="uk-button uk-button-primary tm-product-card-add-button tm-shine js-add-to-cart" aria-label="add to cart">
+                                    <button aria-label="add to cart" class="uk-button uk-button-primary tm-product-card-add-button tm-shine js-add-to-cart">
                                         <span class="tm-product-card-add-button-icon" uk-icon="cart"></span>
                                         <span class="tm-product-card-add-button-text">add to cart</span>
                                     </button>
@@ -544,7 +551,7 @@
                                 <div class="tm-product-card-labels">
                                     <span class="uk-label uk-label-danger">trade-in</span>
                                 </div>
-                                <figure class="tm-media-box-wrap"><img src="images/products/6/6-medium.jpg" alt="Apple MacBook Air 13&quot; MQD32LL/A 128GB (Silver)"/></figure></a>
+                                <figure class="tm-media-box-wrap"><img data-src="images/products/6/6-medium.jpg" class="lazyload" alt="Apple MacBook Air 13&quot; MQD32LL/A 128GB (Silver)"/></figure></a>
                             </div>
                         </div>
                         <div class="tm-product-card-body">
@@ -574,7 +581,7 @@
                                     <div class="uk-text-meta tm-product-card-actions">
                                         <a class="tm-product-card-action js-add-to js-add-to-favorites" title="Add to favorites"><span uk-icon="icon: heart; ratio: .75;"></span><span class="tm-product-card-action-text">Add to favorites</span></a><a class="tm-product-card-action js-add-to js-add-to-compare tm-action-button-active js-added-to" title="Add to compare"><span uk-icon="icon: copy; ratio: .75;"></span><span class="tm-product-card-action-text">Add to compare</span></a>
                                     </div>
-                                    <button class="uk-button uk-button-primary tm-product-card-add-button tm-shine js-add-to-cart" aria-label="add to cart">
+                                    <button aria-label="add to cart" class="uk-button uk-button-primary tm-product-card-add-button tm-shine js-add-to-cart">
                                         <span class="tm-product-card-add-button-icon" uk-icon="cart"></span>
                                         <span class="tm-product-card-add-button-text">add to cart</span>
                                     </button>
@@ -585,7 +592,7 @@
                     <article class="tm-product-card">
                         <div class="tm-product-card-media">
                             <div class="tm-ratio tm-ratio-4-3">
-                                <a class="tm-media-box" href="product.html"><figure class="tm-media-box-wrap"><img src="images/products/7/7-medium.jpg" alt="Dell Inspiron 5378-2063 (Gray)"/></figure></a>
+                                <a class="tm-media-box" href="product.html"><figure class="tm-media-box-wrap"><img data-src="images/products/7/7-medium.jpg" class="lazyload" alt="Dell Inspiron 5378-2063 (Gray)"/></figure></a>
                             </div>
                         </div>
                         <div class="tm-product-card-body">
@@ -616,7 +623,7 @@
                                     <div class="uk-text-meta tm-product-card-actions">
                                         <a class="tm-product-card-action js-add-to js-add-to-favorites" title="Add to favorites"><span uk-icon="icon: heart; ratio: .75;"></span><span class="tm-product-card-action-text">Add to favorites</span></a><a class="tm-product-card-action js-add-to js-add-to-compare" title="Add to compare"><span uk-icon="icon: copy; ratio: .75;"></span><span class="tm-product-card-action-text">Add to compare</span></a>
                                     </div>
-                                    <button class="uk-button uk-button-primary tm-product-card-add-button tm-shine js-add-to-cart" aria-label="add to cart">
+                                    <button aria-label="add to cart" class="uk-button uk-button-primary tm-product-card-add-button tm-shine js-add-to-cart">
                                         <span class="tm-product-card-add-button-icon" uk-icon="cart"></span>
                                         <span class="tm-product-card-add-button-text">add to cart</span>
                                     </button>
@@ -631,7 +638,7 @@
                                 <div class="tm-product-card-labels">
                                     <span class="uk-label uk-label-success">new</span>
                                 </div>
-                                <figure class="tm-media-box-wrap"><img src="images/products/8/8-medium.jpg" alt="Lenovo Yoga 720-13IKB 80X60059RK (Silver)"/></figure></a>
+                                <figure class="tm-media-box-wrap"><img data-src="images/products/8/8-medium.jpg" class="lazyload" alt="Lenovo Yoga 720-13IKB 80X60059RK (Silver)"/></figure></a>
                             </div>
                         </div>
                         <div class="tm-product-card-body">
@@ -661,7 +668,7 @@
                                     <div class="uk-text-meta tm-product-card-actions">
                                         <a class="tm-product-card-action js-add-to js-add-to-favorites" title="Add to favorites"><span uk-icon="icon: heart; ratio: .75;"></span><span class="tm-product-card-action-text">Add to favorites</span></a><a class="tm-product-card-action js-add-to js-add-to-compare" title="Add to compare"><span uk-icon="icon: copy; ratio: .75;"></span><span class="tm-product-card-action-text">Add to compare</span></a>
                                     </div>
-                                    <button class="uk-button uk-button-primary tm-product-card-add-button tm-shine js-add-to-cart" aria-label="add to cart">
+                                    <button aria-label="add to cart" class="uk-button uk-button-primary tm-product-card-add-button tm-shine js-add-to-cart">
                                         <span class="tm-product-card-add-button-icon" uk-icon="cart"></span>
                                         <span class="tm-product-card-add-button-text">add to cart</span>
                                     </button>
@@ -689,7 +696,7 @@
                                 <!-- start ng repeat Brands -->
                                 <li ng-repeat='br in brands'> 
                                     <div class="tm-ratio tm-ratio-16-9">
-                                        <a class="uk-link-muted tm-media-box tm-grayscale" href="#" title="{{br.title}}"><figure class="tm-media-box-wrap"><img src="images/brands/{{br.src}}.svg" alt="{{br.alt}}"></figure></a>
+                                        <a class="uk-link-muted tm-media-box tm-grayscale" href="#" title="{{br.title}}"><figure class="tm-media-box-wrap"><img data-src="images/brands/{{br.src}}.svg" class="lazyload" alt="{{br.alt}}"></figure></a>
                                     </div>
                                 </li>
                                 <!-- end ng repeat Brands -->
@@ -714,7 +721,7 @@
                 <div>
                     <a href="article.html"><article class="uk-card uk-card-default uk-card-small uk-article uk-overflow-hidden uk-box-shadow-hover-large uk-height-1-1 tm-ignore-container">
                     <div class="tm-ratio tm-ratio-16-9">
-                        <figure class="tm-media-box uk-cover-container uk-margin-remove"><img src="images/articles/macbook-photo.jpg" alt="Everything You Need to Know About the MacBook Pro" uk-cover="uk-cover"/></figure>
+                        <figure class="tm-media-box uk-cover-container uk-margin-remove"><img data-src="images/articles/macbook-photo.jpg" class="lazyload" alt="Everything You Need to Know About the MacBook Pro" uk-cover="uk-cover"/></figure>
                     </div>
                     <div class="uk-card-body">
                         <div class="uk-article-body">
@@ -736,7 +743,7 @@
                 <div>
                     <a href="article.html"><article class="uk-card uk-card-default uk-card-small uk-article uk-overflow-hidden uk-box-shadow-hover-large uk-height-1-1 tm-ignore-container">
                     <div class="tm-ratio tm-ratio-16-9">
-                        <figure class="tm-media-box uk-cover-container uk-margin-remove"><img src="images/articles/macos.jpg" alt="Apple introduces macOS Mojave" uk-cover="uk-cover"/></figure>
+                        <figure class="tm-media-box uk-cover-container uk-margin-remove"><img data-src="images/articles/macos.jpg" class="lazyload" alt="Apple introduces macOS Mojave" uk-cover="uk-cover"/></figure>
                     </div>
                     <div class="uk-card-body">
                         <div class="uk-article-body">
@@ -834,15 +841,17 @@
         <div class="uk-container">
             <div class="uk-text-center">
                 <div class="uk-h2 uk-margin-remove">Subscribe for updates</div>
-                <div>Be aware of new products and special offers.</div>
+                <div>
+                    <span>Be aware of new products and special offers.</span>
+                </div>
             </div>
             <div class="uk-margin">
                 <form>
                     <div class="uk-grid-small uk-flex-center" uk-grid>
                         <div class="uk-width-1-1 uk-width-medium@s">
                             <div class="uk-inline uk-width-1-1">
-								<span class="uk-form-icon" uk-icon="mail"></span>
-								<input class="uk-input" type="email" aria-label="subscribe" placeholder="Your email" required>
+                                    <span class="uk-form-icon" uk-icon="mail"></span>
+                                    <input class="uk-input" type="email" aria-label="subscribe" placeholder="Your mail" required>
 							</div>
                         </div>
                         <div>
@@ -860,7 +869,7 @@
                     <li ng-repeat='mp in marketplace'>
                         <div class="uk-grid-small uk-flex-center uk-flex-left@s" uk-grid>
                             <div class="mkt">
-                                <a class="uk-link-muted tm-media-box" href="#" title="{{mp.title}}"><img src="images/marketplaces/{{mp.src}}.svg" alt="{{mp.alt}}"></a>
+                                <a class="uk-link-muted tm-media-box" href="#" title="{{mp.title}}"><img data-src="images/marketplaces/{{mp.src}}.svg" class="lazyload" alt="{{mp.alt}}"></a>
                             </div>
                             <div class="uk-text-center uk-text-left@s uk-width-expand@s">
                                 <div>Maxi Komputer</div>
@@ -882,7 +891,7 @@
             <div class="uk-container">
                 <div class="uk-grid-medium uk-child-width-1-1 uk-child-width-1-4@m" uk-grid>
                     <div>
-                        <a class="uk-logo" href="home.html"><img src="images/logo-inverse.svg" width="100" alt="Logo"></a>
+                        <a class="uk-logo" href="home.html"><img data-src="images/logo-inverse.svg" class="lazyload" width="100" alt="Logo"></a>
                         <p class="uk-text-small" style="text-align: justify;">
                             {{deskripsi}}
                         </p>
@@ -943,10 +952,12 @@
                     </div>
                     <div>
                         <form class="uk-form-stacked">
-                            <label>
-                            <div class="uk-form-label uk-text-muted">Subscribe for updates</div>
-                            <div class="uk-inline uk-width-1-1">
-                                <a class="uk-form-icon uk-form-icon-flip" href="#" uk-icon="mail"></a><input class="uk-input" type="email" placeholder="Your email" required></div>
+                            <label for="input">
+                                <div class="uk-form-label uk-text-muted">Subscribe for updates</div>
+                                <div class="uk-inline uk-width-1-1">
+                                    <a class="uk-form-icon uk-form-icon-flip" href="#" uk-icon="mail"></a>
+                                    <input id="input" class="uk-input" type="email" placeholder="Your email" required>
+                                </div>
                             </label>
                         </form>
                         <div class="uk-margin uk-text-small uk-text-muted">
@@ -1067,7 +1078,7 @@
                             <div class="uk-grid-small" uk-grid>
                                 <div class="uk-width-1-4">
                                     <div class="tm-ratio tm-ratio-4-3">
-                                        <a class="tm-media-box" href="product.html"><figure class="tm-media-box-wrap"><img src="images/products/1/1-small.jpg" alt="Apple MacBook Pro 15&quot; Touch Bar MPTU2LL/A 256GB (Silver)"></figure></a>
+                                        <a class="tm-media-box" href="product.html"><figure class="tm-media-box-wrap"><img data-src="images/products/1/1-small.jpg" class="lazyload" alt="Apple MacBook Pro 15&quot; Touch Bar MPTU2LL/A 256GB (Silver)"></figure></a>
                                     </div>
                                 </div>
                                 <div class="uk-width-expand">
@@ -1089,7 +1100,7 @@
                             <div class="uk-grid-small" uk-grid>
                                 <div class="uk-width-1-4">
                                     <div class="tm-ratio tm-ratio-4-3">
-                                        <a class="tm-media-box" href="product.html"><figure class="tm-media-box-wrap"><img src="images/products/2/2-small.jpg" alt="Apple MacBook 12&quot; MNYN2LL/A 512GB (Rose Gold)"></figure></a>
+                                        <a class="tm-media-box" href="product.html"><figure class="tm-media-box-wrap"><img data-src="images/products/2/2-small.jpg" class="lazyload" alt="Apple MacBook 12&quot; MNYN2LL/A 512GB (Rose Gold)"></figure></a>
                                     </div>
                                 </div>
                                 <div class="uk-width-expand">
@@ -1125,14 +1136,16 @@
             </div>
             </aside>
         </div>
-	</div>
-	<!-- Start Angular JS -->
-	<script src="js/angular.min.js" type="text/javascript"></script>
-	<script src="js/controller.js" type="text/javascript"></script>
-	<!-- End Angular JS -->
-	<script src="js/script.js" type="text/javascript"></script>
-	<script src="js/lightslider.js" type="text/javascript"></script>
-	<script>
+    </div>
+    <!-- Start Angular JS -->
+    <script src="js/angular.min.js" type="text/javascript"></script>
+    <script src="js/controller.js" type="text/javascript"></script>
+    <!-- End Angular JS -->
+    
+    <script src="js/script.js" type="text/javascript"></script>
+    <script src="js/lightslider.js" type="text/javascript"></script>
+    <script src="js/lazysizes.min.js" type="text/javascript" async></script>
+    <script>
         if ('serviceWorker' in navigator) {
 
             navigator.serviceWorker
@@ -1168,6 +1181,6 @@
             }); 
             };
     </script>
-	
+        
 </body>
 </html>

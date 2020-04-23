@@ -21,8 +21,8 @@
 <link rel="apple-touch-icon" sizes="167x167" href="images/apple_icons/touch-icon-ipad-retina.png">
 <link rel="manifest" href="manifest.json">
 	
-<script src="js/uikit.js" type="text/javascript" async></script>
-<script src="js/uikit-icons.js" type="text/javascript" async></script>
+<script src="js/uikit.js" type="text/javascript"></script>
+<script src="js/uikit-icons.js" type="text/javascript"></script>
 <script src="js/jquery-3.5.0.slim.min.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="css/style.css">
@@ -343,9 +343,16 @@
                             </div>
                             <div class="tm-product-card-add">
                                 <div class="uk-text-meta tm-product-card-actions">
-                                    <a class="tm-product-card-action js-add-to js-add-to-favorites tm-action-button-active js-added-to" title="Add to favorites"><span uk-icon="icon: heart; ratio: .75;"></span><span class="tm-product-card-action-text">Add to favorites</span></a><a class="tm-product-card-action js-add-to js-add-to-compare tm-action-button-active js-added-to" title="Add to compare"><span uk-icon="icon: copy; ratio: .75;"></span><span class="tm-product-card-action-text">Add to compare</span></a>
+                                    <a class="tm-product-card-action js-add-to js-add-to-favorites tm-action-button-active js-added-to" title="Add to favorites">
+                                        <span uk-icon="icon: heart; ratio: .75;"></span>
+                                        <span class="tm-product-card-action-text">Add to favorites</span>
+                                    </a>
+                                    <a class="tm-product-card-action js-add-to js-add-to-compare tm-action-button-active js-added-to" title="Add to compare">
+                                        <span uk-icon="icon: copy; ratio: .75;"></span>
+                                        <span class="tm-product-card-action-text">Add to compare</span>
+                                    </a>
                                 </div>
-                                <button aria-label="add to cart" class="uk-button uk-button-primary tm-product-card-add-button tm-shine js-add-to-cart">
+                                <button class="uk-button uk-button-primary tm-product-card-add-button tm-shine js-add-to-cart" aria-label="add to cart">
                                     <span class="tm-product-card-add-button-icon" uk-icon="cart"></span>
                                     <span class="tm-product-card-add-button-text">add to cart</span>
                                 </button>
