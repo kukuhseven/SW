@@ -1638,7 +1638,7 @@ select.uk-form-width-xsmall {
 	text-transform:uppercase
 }
 .uk-label-success {
-	background-color:#00ffa2;
+	background-color:#00d32e;
 	color:#fff
 }
 .uk-label-warning {
@@ -3030,16 +3030,16 @@ ul.uk-nav-sub {
 	right:15px
 }
 .uk-notification-message-primary {
-	color:#1e87f0
+	color:#0080ff
 }
 .uk-notification-message-success {
-	color:#32d296
+	color:#00d32e
 }
 .uk-notification-message-warning {
-	color:#faa05a
+	color:#ff6f00
 }
 .uk-notification-message-danger {
-	color:#f0506e
+	color:#ff002f
 }
 .uk-tooltip {
 	display:none;
@@ -3633,16 +3633,16 @@ ul.uk-nav-sub {
 	color:#424242!important
 }
 .uk-text-primary {
-	color:#1e87f0!important
+	color:#0080ff!important
 }
 .uk-text-success {
-	color:#32d296!important
+	color:#00d32e!important
 }
 .uk-text-warning {
-	color:#faa05a!important
+	color:#ff6f00!important
 }
 .uk-text-danger {
-	color:#f0506e!important
+	color:#ff002f!important
 }
 .uk-text-background {
 	-webkit-background-clip:text;
