@@ -1108,6 +1108,7 @@
     };
 }(jQuery));
 
+
 /*---------------- Category Slider------------------*/
 $(document).ready(function() {
     $('#autoWidth').lightSlider({
